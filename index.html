@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 3</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+  </head>
+
+  <body>
+
+    <div id = "header"> Library</div>
+    <p>Click "Add Book" to add a book to your library. Click the check box to indicate <br> whether or not you've read the book. This can be updated later.</p>
+
+    <div id = "addBook">
+      <form if ="form">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="form"><br>
+        <label for="author">Author</label><br>
+        <input type="text" id="author" name="form"><br>
+        <label for="pages">Number of Pages</label><br>
+        <input type="text" id="pages" name="form"><br>
+        <label for="checkbox">Read?</label><br>
+        <input type="checkbox" id="read" name="form" value="read">
+        <label for="read"></label><br>
+
+      </form>
+      <button id="submit">Submit</button> <button id = "exit">Cancel</button></p>
+    </div>
+
+    <div>
+    <button id = "getForm">Add Book</button>
+    
+    </div>
+
+    <table id = "library">
+      <thead>
+        <tr>
+          <th style="visibility:hidden">Entry</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  <script src="script.js"></script>
+  </body>
+
+</html>
