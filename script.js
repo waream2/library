@@ -7,12 +7,13 @@ let title = document.getElementById("title")
 let form = document.getElementById("form");
 let cancelButton = document.getElementById("exit")
 
-// book object constructor function
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read       
+    };
 };
 
 //used to show form when a user wants to add a new book
